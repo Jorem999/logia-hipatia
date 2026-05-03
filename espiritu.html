@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espíritu — R:. L:. S:. Hipatia de Alejandría Nº57</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT:'#0d0d3d', light:'#1a1a5e', dark:'#080828' },
+                        'sky-light':'#87CEEB',
+                        bronze:{ DEFAULT:'#A68868', light:'#C4A882' },
+                        gold:{ DEFAULT:'#C5A55A', light:'#D4AF37', dark:'#A68B3E' },
+                        'dark-brown':'#3E2C1C',
+                        cream:'#FAF6F0',
+                        'warm-white':'#F8F4EC',
+                    },
+                    fontFamily: {
+                        display:['"Playfair Display"','serif'],
+                        body:['Inter','sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream text-navy">
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav id="mainNav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" style="background:transparent;">
+        <div class="max-w-6xl mx-auto px-5 md:px-8">
+            <div class="flex items-center justify-start gap-6 lg:gap-8 h-16 md:h-20">
+                <a href="index.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Inicio</a>
+                <a href="espiritu.html" class="text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Hipatia</a>
+                <a href="francmasoneria.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Francmasonería</a>
+                <a href="faq.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Preguntas Frecuentes</a>
+                <a href="gola.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">G:. O:. L:. A:.</a>
+                <a href="contacto.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Contacto</a>
+                <button id="menuToggle" class="md:hidden text-white p-2 ml-auto" aria-label="Abrir menú">
+                    <span class="iconify" data-icon="mdi:menu" data-width="24"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div id="mobileMenu" class="mobile-menu fixed inset-0 z-[60] bg-navy-dark/98 backdrop-blur-xl flex flex-col">
+        <div class="flex justify-end p-5">
+            <button id="menuClose" class="text-white/70 hover:text-gold p-2 transition-colors" aria-label="Cerrar menú">
+                <span class="iconify" data-icon="mdi:close" data-width="28"></span>
+            </button>
+        </div>
+        <div class="flex-1 flex flex-col items-center justify-center gap-8">
+            <a href="index.html" class="mobile-link font-display text-2xl text-white/80 hover:text-gold tracking-wide transition-colors">Inicio</a>
+            <a href="espiritu.html" class="mobile-link font-display text-2xl text-gold tracking-wide">Hipatia</a>
+            <a href="francmasoneria.html" class="mobile-link font-display text-2xl text-white/80 hover:text-gold tracking-wide transition-colors">Francmasonería</a>
+            <a href="faq.html" class="mobile-link font-display text-2xl text-white/80 hover:text-gold tracking-wide transition-colors">Preguntas Frecuentes</a>
+            <a href="gola.html" class="mobile-link font-display text-2xl text-white/80 hover:text-gold tracking-wide transition-colors">G:. O:. L:. A:.</a>
+            <a href="contacto.html" class="mobile-link font-display text-2xl text-white/80 hover:text-gold tracking-wide transition-colors">Contacto</a>
+            <div class="greek-line w-24 mt-4"></div>
+            <p class="text-white/30 text-xs tracking-widest uppercase font-medium">Gran Oriente Latinoamericano</p>
+        </div>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="relative min-h-[60vh] flex items-center justify-center bg-navy overflow-hidden pt-20 md:pt-24">
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image:url('data:image/svg+xml,%3Csvg viewBox=%220 0 256 256%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%224%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/%3E%3C/svg%3E');"></div>
+        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
+        <div class="relative z-10 text-center px-6">
+            <div class="reveal mb-10 md:mb-12 flex justify-center">
+                <img src="img/Hipatia dibujo.PNG" alt="Hipatia" class="w-48 h-48 md:w-56 md:h-56 object-contain">
+            </div>
+            <div class="reveal">
+                <p class="text-gold/60 text-[10px] tracking-[0.4em] uppercase font-semibold mb-4">Nuestros Valores</p>
+                <h1 class="font-display text-white text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight">Hipatia</h1>
+                <div class="flex items-center justify-center gap-4 mt-6">
+                    <div class="h-px w-16 bg-gold/40"></div>
+                    <div class="masonic-diamond"></div>
+                    <div class="h-px w-16 bg-gold/40"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ESPÍRITU CONTENT ============ -->
+    <section class="relative bg-cream py-24 md:py-32 lg:py-40 overflow-hidden">
+        <div class="absolute top-0 left-0 right-0 greek-line"></div>
+        <div class="absolute bottom-0 left-0 right-0 greek-line"></div>
+
+        <div class="max-w-5xl mx-auto px-6 md:px-10">
+            <div class="grid md:grid-cols-5 gap-12 md:gap-16 items-center">
+                <div class="md:col-span-3 reveal reveal-delay-2">
+                    <blockquote class="border-l-2 border-gold/50 pl-6 md:pl-8 mb-8">
+                        <p class="font-display text-navy text-xl md:text-2xl font-medium leading-relaxed italic">
+                            "Hipatia de Alejandría encarna los valores que esta Logia desea cultivar."
+                        </p>
+                    </blockquote>
+                    <p class="text-navy/75 text-base md:text-lg leading-[1.85] mb-6">
+                        Al Oriente de Ambato, la <strong class="text-navy font-medium">R:. L:. S:. Hipatia de Alejandría Nº57</strong> florece como un espacio consagrado al amor por la razón y la virtud. Aquí, el crecimiento interior de cada miembro se nutre a través del estudio constante y el quehacer filosófico, buscando en la sabiduría antigua las claves para comprender nuestro presente.
+                    </p>
+                    <p class="text-navy/65 text-base md:text-lg leading-[1.85]">
+                        Teniendo al uso de la razón como <strong class="text-navy font-medium">escuadra de nuestros pasos</strong>, caminamos juntos hacia la perfección del individuo, con la convicción de que el conocimiento verdadero ilumina el camino del hombre y lo acerca a su naturaleza más elevada.
+                    </p>
+                </div>
+                <div class="md:col-span-2 flex justify-center reveal reveal-delay-3">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gold/5 rounded-full blur-2xl scale-110"></div>
+                        <div class="relative">
+                            <img 
+                                 id="riteSealImg"
+                                 src="img/rite-seal.png"
+                                 alt="Sello del Rito Francés"
+                                 class="w-52 h-52 md:w-60 md:h-60 mx-auto opacity-0 transition-opacity duration-700"
+                                 onload="this.classList.remove('opacity-0');this.classList.add('opacity-90');"
+                                 onerror="this.style.display='none';document.getElementById('riteSealFallback').style.display='flex';">
+                            <div id="riteSealFallback" class="rite-seal-fallback mx-auto"></div>
+                        </div>
+                        <p class="text-center text-navy/30 text-[10px] tracking-[0.3em] uppercase mt-4">Rito Francés</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mt-20 md:mt-28">
+                <div class="reveal text-center">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full border border-gold/30 flex items-center justify-center">
+                        <span class="iconify text-gold" data-icon="mdi:lightbulb-outline" data-width="22"></span>
+                    </div>
+                    <p class="font-display text-navy text-sm font-semibold tracking-wide">Razón</p>
+                    <p class="text-navy/50 text-xs mt-1 leading-relaxed">Luz del pensamiento</p>
+                </div>
+                <div class="reveal reveal-delay-1 text-center">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full border border-gold/30 flex items-center justify-center">
+                        <span class="iconify text-gold" data-icon="mdi:book-open-page-variant-outline" data-width="22"></span>
+                    </div>
+                    <p class="font-display text-navy text-sm font-semibold tracking-wide">Estudio</p>
+                    <p class="text-navy/50 text-xs mt-1 leading-relaxed">Camino al conocimiento</p>
+                </div>
+                <div class="reveal reveal-delay-2 text-center">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full border border-gold/30 flex items-center justify-center">
+                        <span class="iconify text-gold" data-icon="mdi:scale-balance" data-width="22"></span>
+                    </div>
+                    <p class="font-display text-navy text-sm font-semibold tracking-wide">Virtud</p>
+                    <p class="text-navy/50 text-xs mt-1 leading-relaxed">Equilibrio del alma</p>
+                </div>
+                <div class="reveal reveal-delay-3 text-center">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full border border-gold/30 flex items-center justify-center">
+                        <span class="iconify text-gold" data-icon="mdi:account-group-outline" data-width="22"></span>
+                    </div>
+                    <p class="font-display text-navy text-sm font-semibold tracking-wide">Fraternidad</p>
+                    <p class="text-navy/50 text-xs mt-1 leading-relaxed">Vínculo universal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-navy-dark border-t border-white/5">
+        <div class="max-w-5xl mx-auto px-6 md:px-10 py-12 md:py-16">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="text-center md:text-left">
+                    <p class="font-display text-white/80 text-base tracking-wide">R:. L:. S:. Hipatia de Alejandría Nº57</p>
+                    <p class="text-white/30 text-xs tracking-[0.15em] uppercase mt-1">Gran Oriente Latinoamericano</p>
+                    <p class="text-white/20 text-xs mt-1">Al Oriente de Ambato · Ecuador</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="h-px w-8 bg-gold/20"></div>
+                    <div class="masonic-diamond" style="background:rgba(197,165,90,0.3);width:6px;height:6px;"></div>
+                    <div class="h-px w-8 bg-gold/20"></div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-white/20 text-xs tracking-wider">Constituida el 22 de Noviembre de 2020</p>
+                    <p class="text-white/15 text-xs mt-1">L:. I:. F:.</p>
+                </div>
+            </div>
+            <div class="mt-10 pt-6 border-t border-white/5 text-center">
+                <p class="text-white/15 text-[10px] tracking-[0.2em] uppercase">
+                    © 2025 R:. L:. S:. Hipatia de Alejandría Nº57 — Todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
