@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -35,14 +35,14 @@
     <!-- ============ NAVIGATION ============ -->
     <nav id="mainNav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" style="background:transparent;">
         <div class="max-w-6xl mx-auto px-5 md:px-8">
-            <div class="flex items-center justify-start gap-6 lg:gap-8 h-16 md:h-20">
+            <div class="flex items-center justify-between h-16 md:h-20"><div class="hidden md:flex items-center gap-6 lg:gap-8">
                 <a href="index.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Inicio</a>
                 <a href="espiritu.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Hipatia</a>
                 <a href="francmasoneria.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Francmasonería</a>
                 <a href="faq.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Preguntas Frecuentes</a>
                 <a href="gola.html" class="text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">G:. O:. L:. A:.</a>
                 <a href="contacto.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Contacto</a>
-                <button id="menuToggle" class="md:hidden text-white p-2 ml-auto" aria-label="Abrir menú">
+                </div><button id="menuToggle" class="md:hidden text-white p-2" aria-label="Abrir menú">
                     <span class="iconify" data-icon="mdi:menu" data-width="24"></span>
                 </button>
             </div>
@@ -84,14 +84,14 @@
                 </div>
             </div>
         </div>
-        <div class="relative z-10 pb-10 flex flex-col items-center gap-2 animate-bounce">
+        <button onclick="document.getElementById('sec-content').scrollIntoView({behavior:'smooth'})" class="relative z-10 pb-10 flex flex-col items-center gap-2 animate-bounce cursor-pointer bg-transparent border-0" aria-label="Descubrir">
             <p class="text-white/30 text-[10px] tracking-[0.3em] uppercase">Descubrir</p>
             <span class="iconify text-gold/50" data-icon="mdi:chevron-down" data-width="28"></span>
-        </div>
+        </button>
     </section>
 
     <!-- ============ GOLA CONTENT ============ -->
-    <section class="relative bg-cream py-24 md:py-32 lg:py-40 overflow-hidden">
+    <section id="sec-content" class="relative bg-cream py-24 md:py-32 lg:py-40 overflow-hidden">
         <div class="absolute top-0 left-0 right-0 greek-line"></div>
         <div class="absolute bottom-0 left-0 right-0 greek-line"></div>
 
@@ -181,3 +181,7 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+

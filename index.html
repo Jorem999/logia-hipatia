@@ -35,14 +35,14 @@
     <!-- ============ NAVIGATION ============ -->
     <nav id="mainNav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" style="background:transparent;">
         <div class="max-w-6xl mx-auto px-5 md:px-8">
-            <div class="flex items-center justify-start gap-6 lg:gap-8 h-16 md:h-20">
+            <div class="flex items-center justify-between h-16 md:h-20"><div class="hidden md:flex items-center gap-6 lg:gap-8">
                 <a href="index.html" class="text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Inicio</a>
                 <a href="espiritu.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Hipatia</a>
                 <a href="francmasoneria.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Francmasonería</a>
                 <a href="faq.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Preguntas Frecuentes</a>
                 <a href="gola.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">G:. O:. L:. A:.</a>
                 <a href="contacto.html" class="text-white/70 hover:text-gold text-xs tracking-widest uppercase font-medium transition-colors duration-300">Contacto</a>
-                <button id="menuToggle" class="md:hidden text-white p-2 ml-auto" aria-label="Abrir menú">
+                </div><button id="menuToggle" class="md:hidden text-white p-2" aria-label="Abrir menú">
                     <span class="iconify" data-icon="mdi:menu" data-width="24"></span>
                 </button>
             </div>
@@ -77,39 +77,43 @@
         <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
             <div class="reveal mb-8 md:mb-10 flex justify-center">
                 <div class="relative">
-                    <img src="img/seal.png"
+                    <img src="img/seal transparent.png"
                          alt="Sello de la R:. L:. S:. Hipatia de Alejandría"
                          class="w-36 h-36 md:w-44 md:h-44 rounded-full seal-glow border border-gold/30">
                 </div>
             </div>
             <div class="reveal reveal-delay-1">
-                <p class="text-gold/80 text-[10px] md:text-xs tracking-[0.35em] uppercase font-medium mb-4 md:mb-6">Respetable Logia Simbólica</p>
+                <p class="text-gold/80 text-[10px] md:text-xs tracking-[0.35em] uppercase font-medium mb-4 md:mb-6">
+                    Espacio de reflexión y desarrollo personal
+                </p>
                 <h1 class="font-display text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.1] tracking-tight">
-                    Hipatia<br class="sm:hidden"> de Alejandría
+                    Logia Hipatia de Alejandría
                 </h1>
-                <p class="font-display text-gold text-2xl sm:text-3xl md:text-4xl font-light mt-2 tracking-wide">Nº57</p>
+                <p class="text-white/70 text-sm md:text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+                    Una comunidad dedicada al estudio, la reflexión y el crecimiento interior a través de la tradición de la Francmasonería.
+                </p>
             </div>
             <div class="reveal reveal-delay-2 mt-6 md:mt-8">
-                <div class="flex items-center justify-center gap-4 mb-4">
+                <div class="flex items-center justify-center gap-4 mb-6">
                     <div class="h-px w-12 bg-gold/30"></div>
                     <div class="masonic-diamond"></div>
                     <div class="h-px w-12 bg-gold/30"></div>
                 </div>
-                <p class="text-white/60 text-sm md:text-base tracking-[0.2em] uppercase font-medium">Gran Oriente Latinoamericano</p>
-                <p class="text-sky-light/50 text-xs md:text-sm tracking-[0.15em] uppercase mt-2">Al Oriente de Ambato · Ecuador</p>
+                <a href="contacto.html"
+                   class="inline-block bg-gold hover:bg-gold-light text-navy-dark font-semibold text-xs tracking-wider uppercase px-8 py-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-gold/20">
+                    Solicitar información
+                </a>
             </div>
         </div>
 
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 scroll-bounce">
-            <div class="flex flex-col items-center gap-2">
-                <span class="text-white/30 text-[9px] tracking-[0.3em] uppercase">Descubrir</span>
-                <span class="iconify text-white/30" data-icon="mdi:chevron-down" data-width="20"></span>
-            </div>
-        </div>
+                <button onclick="document.getElementById('sec-tarjetas').scrollIntoView({behavior:'smooth'})"
+            class="absolute bottom-8 left-0 right-0 z-10 flex justify-center scroll-bounce cursor-pointer group" aria-label="Ir a la siguiente sección">
+            <span class="iconify text-white/30 group-hover:text-white/60 transition-colors duration-300" data-icon="mdi:chevron-double-down" data-width="28"></span>
+        </button>
     </section>
 
     <!-- Quick links from hero -->
-    <section class="bg-cream py-20 md:py-28">
+    <section id="sec-tarjetas" class="bg-cream py-20 md:py-28">
         <div class="max-w-5xl mx-auto px-6 md:px-10">
             <div class="grid md:grid-cols-3 gap-8 md:gap-10">
                 <a href="espiritu.html" class="reveal group block bg-white border border-navy/5 rounded-2xl p-8 text-center hover:shadow-lg hover:shadow-navy/5 transition-all duration-500 hover:-translate-y-1">
@@ -135,6 +139,117 @@
                 </a>
             </div>
         </div>
+    </section>
+
+    <button onclick="document.getElementById('sec-que-es').scrollIntoView({behavior:'smooth'})"
+        class="flex justify-center w-full py-4 bg-cream group cursor-pointer" aria-label="Ir a la siguiente sección">
+        <span class="iconify text-navy opacity-30 group-hover:opacity-60 transition-opacity duration-300 scroll-bounce" data-icon="mdi:chevron-double-down" data-width="22"></span>
+    </button>
+
+    <!-- ============ ¿QUÉ ES ESTA LOGIA? ============ -->
+    <section id="sec-que-es" class="bg-cream py-20 md:py-28">
+        <div class="max-w-4xl mx-auto px-6 md:px-10 text-center">
+            <h2 class="font-display text-navy text-3xl md:text-4xl font-semibold mb-6">
+                ¿Qué es esta Logia?
+            </h2>
+            <p class="text-navy/70 text-base md:text-lg leading-[1.8] mb-6">
+                Somos una comunidad de personas que buscan comprender mejor al ser humano, desarrollar su pensamiento y cultivar valores como la razón, la ética y la fraternidad.
+            </p>
+            <p class="text-navy/60 text-base md:text-lg leading-[1.8]">
+                Trabajamos dentro de la tradición de la Francmasonería, una escuela de formación simbólica y filosófica con siglos de historia.
+            </p>
+        </div>
+    </section>
+
+
+    <button onclick="document.getElementById('sec-que-hacemos').scrollIntoView({behavior:'smooth'})"
+        class="flex justify-center w-full py-4 bg-cream group cursor-pointer" aria-label="Ir a la siguiente sección">
+        <span class="iconify text-navy opacity-30 group-hover:opacity-60 transition-opacity duration-300 scroll-bounce" data-icon="mdi:chevron-double-down" data-width="22"></span>
+    </button>
+    <!-- ============ ¿QUÉ HACEMOS? ============ -->
+    <section id="sec-que-hacemos" class="bg-white py-20 md:py-28">
+        <div class="max-w-5xl mx-auto px-6 md:px-10 text-center">
+            <h2 class="font-display text-navy text-3xl md:text-4xl font-semibold mb-10">
+                ¿Qué hacemos?
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="bg-cream p-6 rounded-xl flex gap-4 items-start">
+                    <div class="w-11 h-11 rounded-full bg-navy/8 flex items-center justify-center shrink-0 mt-1">
+                        <span class="iconify text-gold" data-icon="mdi:book-open-page-variant-outline" data-width="22"></span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-navy mb-2">Estudio filosófico</h3>
+                        <p class="text-navy/60">Exploramos ideas, símbolos y tradiciones del pensamiento.</p>
+                    </div>
+                </div>
+                <div class="bg-cream p-6 rounded-xl flex gap-4 items-start">
+                    <div class="w-11 h-11 rounded-full bg-navy/8 flex items-center justify-center shrink-0 mt-1">
+                        <span class="iconify text-gold" data-icon="mdi:set-center" data-width="22"></span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-navy mb-2">Trabajo interior</h3>
+                        <p class="text-navy/60">Cada miembro desarrolla su propio proceso de crecimiento.</p>
+                    </div>
+                </div>
+                <div class="bg-cream p-6 rounded-xl flex gap-4 items-start">
+                    <div class="w-11 h-11 rounded-full bg-navy/8 flex items-center justify-center shrink-0 mt-1">
+                        <span class="iconify text-gold" data-icon="mdi:vpn" data-width="22"></span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-navy mb-2">Reflexión ética</h3>
+                        <p class="text-navy/60">Buscamos comprender mejor nuestras decisiones y acciones.</p>
+                    </div>
+                </div>
+                <div class="bg-cream p-6 rounded-xl flex gap-4 items-start">
+                    <div class="w-11 h-11 rounded-full bg-navy/8 flex items-center justify-center shrink-0 mt-1">
+                        <span class="iconify text-gold" data-icon="mdi:forum-outline" data-width="22"></span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-navy mb-2">Diálogo respetuoso</h3>
+                        <p class="text-navy/60">Intercambio de ideas sin dogmas ni imposiciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <button onclick="document.getElementById('sec-para-ti').scrollIntoView({behavior:'smooth'})"
+        class="flex justify-center w-full py-4 bg-white group cursor-pointer" aria-label="Ir a la siguiente sección">
+        <span class="iconify text-navy opacity-30 group-hover:opacity-60 transition-opacity duration-300 scroll-bounce" data-icon="mdi:chevron-double-down" data-width="22"></span>
+    </button>
+    <!-- ============ ¿ES PARA TI? ============ -->
+    <section id="sec-para-ti" class="bg-navy py-20 md:py-28">
+        <div class="max-w-4xl mx-auto px-6 md:px-10 text-center">
+            <h2 class="font-display text-white text-3xl md:text-4xl font-semibold mb-6">
+                ¿Es para ti?
+            </h2>
+            <p class="text-white/70 mb-6">
+                La masonería no es para todos.
+            </p>
+            <ul class="text-white/60 space-y-2 mb-6">
+                <li>• Interés genuino por el autoconocimiento</li>
+                <li>• Valoración del pensamiento crítico</li>
+                <li>• Búsqueda de crecimiento personal profundo</li>
+            </ul>
+            <p class="text-white/50">
+                No es un espacio para intereses económicos, políticos o de influencia.
+            </p>
+        </div>
+    </section>
+    <button onclick="document.getElementById('sec-cta').scrollIntoView({behavior:'smooth'})"
+        class="flex justify-center w-full py-4 bg-navy group cursor-pointer" aria-label="Ir a la siguiente sección">
+        <span class="iconify text-white opacity-40 group-hover:opacity-70 transition-opacity duration-300 scroll-bounce" data-icon="mdi:chevron-double-down" data-width="22"></span>
+    </button>
+    <!-- ============ CTA FINAL ============ -->
+    <section id="sec-cta" class="bg-navy py-20 text-center">
+        <h2 class="font-display text-white text-3xl mb-6">
+            Si este camino resuena contigo
+        </h2>
+        <a href="contacto.html"
+           class="inline-block bg-gold text-navy-dark px-8 py-4 rounded-xl font-semibold uppercase hover:bg-gold-light transition-all duration-300 hover:shadow-lg hover:shadow-gold/20">
+            Escríbenos
+        </a>
     </section>
 
     <!-- ============ FOOTER ============ -->
@@ -167,3 +282,11 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+

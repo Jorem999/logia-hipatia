@@ -97,3 +97,8 @@ body { font-family:'Inter',sans-serif; }
     border-radius: 50%;
     border: 2px solid rgba(197,165,90,0.2);
 }
+
+/* Evitar que los íconos de Iconify intercepten clics en botones */
+button .iconify, button svg {
+    pointer-events: none;
+}
